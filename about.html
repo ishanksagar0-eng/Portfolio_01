@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Effortless Responsive</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">✨ Effortless</a>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== ABOUT HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>About This Project</h1>
+            <p class="hero-sub">The philosophy behind effortless responsive design.</p>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT CONTENT ===== -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <article class="about-text">
+                    <h2>Why "Effortless"?</h2>
+                    <p>
+                        Responsive design used to mean writing dozens of media queries and
+                        fighting with fixed widths. Today, with CSS Grid, Flexbox, and
+                        viewport-relative units, we can build layouts that <strong>just work</strong>
+                        at every size.
+                    </p>
+                    <p>
+                        This site is a living example. Every component — from the navigation
+                        to the feature grid — is built with <strong>mobile-first</strong> principles
+                        and <strong>modern CSS</strong>. There are only 3 media queries in the
+                        entire stylesheet.
+                    </p>
+                    <ul class="about-list">
+                        <li>✅ <strong>Flexbox</strong> for one‑dimensional layouts (nav, cards)</li>
+                        <li>✅ <strong>CSS Grid</strong> for two‑dimensional page structures</li>
+                        <li>✅ <code>clamp()</code> for fluid typography</li>
+                        <li>✅ <code>auto-fit / minmax()</code> for self‑adjusting grids</li>
+                    </ul>
+                </article>
+                <aside class="about-sidebar">
+                    <div class="card">
+                        <h3>📊 Tech Stack</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 (Flexbox + Grid)</li>
+                            <li>Vanilla JavaScript (hamburger)</li>
+                            <li>No frameworks needed</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🎯 Core Principles</h3>
+                        <ul>
+                            <li>Mobile‑first</li>
+                            <li>Progressive enhancement</li>
+                            <li>Performance by default</li>
+                            <li>Accessibility (ARIA labels)</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Effortless Responsive. Built with ❤️ and CSS Grid.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
