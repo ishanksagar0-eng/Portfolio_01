@@ -1,0 +1,67 @@
+═══════════════════════════════════════════════════════
+  LAYOUT STRATEGY — Effortless Responsive Website
+═══════════════════════════════════════════════════════
+
+1.  MOBILE-FIRST (Base styles = mobile)
+    ────────────────────────────────────────────
+    • All CSS is written for small screens first.
+    • Media queries only ADD styles for larger screens.
+    • No "max-width" overrides — use "min-width" to enhance.
+
+2.  FLUID GRIDS — CSS Grid (auto-fit + minmax)
+    ────────────────────────────────────────────
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.8rem;
+    }
+    → Cards automatically wrap when they don't fit.
+    → No media query needed for basic responsiveness!
+
+3.  FLEXBOX for 1D Layouts
+    ────────────────────────────────────────────
+    • Header: .container { display: flex; justify-content: space-between; }
+    • Nav items: flex-direction: row on tablet+.
+    • Hamburger toggles nav-list visibility.
+
+4.  FLUID TYPOGRAPHY with clamp()
+    ────────────────────────────────────────────
+    h1 { font-size: clamp(2.2rem, 8vw, 4.2rem); }
+    → Scales smoothly from 2.2rem (mobile) to 4.2rem (desktop).
+
+5.  FLEXIBLE MEDIA
+    ────────────────────────────────────────────
+    img { max-width: 100%; height: auto; }
+    → Images never overflow their containers.
+
+6.  NAVIGATION BEHAVIOR
+    ────────────────────────────────────────────
+    • Mobile: hamburger menu (JS toggles .open class).
+    • Tablet+: nav is always visible (display: flex !important).
+    • Active page gets a colored bottom border.
+
+7.  LAYOUT HIERARCHY (per page)
+    ────────────────────────────────────────────
+    index.html:
+        Header → Hero → Features (grid) → Contact → Footer
+
+    about.html:
+        Header → Page Hero → About Content (grid: 2fr 1fr) → Footer
+
+8.  BREAKPOINTS (only 2 needed)
+    ────────────────────────────────────────────
+    • 768px  → Tablet (nav becomes horizontal, hero text left-aligned)
+    • 1024px → Desktop (wider hero, more gap in feature grid)
+
+9.  ACCESSIBILITY
+    ────────────────────────────────────────────
+    • aria-label on nav and hamburger
+    • Semantic HTML: <header>, <nav>, <section>, <footer>
+    • Focus states via :hover and :active
+
+10. PERFORMANCE NOTES
+    ────────────────────────────────────────────
+    • One CSS file (no frameworks)
+    • Minimal JS (only for hamburger toggle)
+    • No external fonts (system fonts only)
+    • No external icons (emoji used for visual cues)
