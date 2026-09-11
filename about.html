@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About — Effortless Responsive</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Ishank Sagar – web developer from Neemganj, Biharsharif, Nalanda, Bihar">
+  <meta name="theme-color" content="#0c0c0b">
+  <title>About | Ishank Sagar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ===== NAVIGATION ===== -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">✨ Effortless</a>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Ishank Sagar</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section about-page">
+      <div class="container">
+        <h1>About Me</h1>
+        <p class="lead">
+          I'm Ishank Sagar, a developer who cares about craft, clarity, and creating things people enjoy using.
+        </p>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>My Journey</h2>
+            <p>
+              I started building websites because I loved the mix of logic and design.
+              Over time I've focused on writing clean, maintainable code and creating
+              fast, accessible interfaces.
+            </p>
+            <p>
+              I enjoy solving real problems — whether it's improving performance,
+              making something more usable, or turning a rough idea into a polished product.
+            </p>
+            <h2>What I Do</h2>
+            <ul class="skills-list">
+              <li>Frontend development (HTML, CSS, JavaScript, React)</li>
+              <li>Responsive & accessible UI design</li>
+              <li>Performance optimization & Core Web Vitals</li>
+              <li>Working with APIs and simple backends</li>
+              <li>Version control with Git</li>
+            </ul>
+            <h2>Beyond Code</h2>
+            <p>
+              When I'm not coding I like learning new tools, reading about design systems,
+              and exploring ways to make the web a better place for everyone.
+            </p>
+          </div>
+          <aside class="about-sidebar">
+            <div class="info-card">
+              <h3>Quick Info</h3>
+              <ul>
+                <li><strong>Location:</strong> Neemganj, Biharsharif, Nalanda, Bihar</li>
+                <li><strong>Available for:</strong> Internships, freelance & full-time</li>
+                <li><strong>Focus:</strong> Frontend & UI</li>
+              </ul>
             </div>
-            <nav class="main-nav" aria-label="Main Navigation">
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span><span></span><span></span>
-                </button>
-                <ul class="nav-list" id="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- ===== ABOUT HERO ===== -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>About This Project</h1>
-            <p class="hero-sub">The philosophy behind effortless responsive design.</p>
-        </div>
-    </section>
-
-    <!-- ===== ABOUT CONTENT ===== -->
-    <section class="about-content">
-        <div class="container">
-            <div class="about-grid">
-                <article class="about-text">
-                    <h2>Why "Effortless"?</h2>
-                    <p>
-                        Responsive design used to mean writing dozens of media queries and
-                        fighting with fixed widths. Today, with CSS Grid, Flexbox, and
-                        viewport-relative units, we can build layouts that <strong>just work</strong>
-                        at every size.
-                    </p>
-                    <p>
-                        This site is a living example. Every component — from the navigation
-                        to the feature grid — is built with <strong>mobile-first</strong> principles
-                        and <strong>modern CSS</strong>. There are only 3 media queries in the
-                        entire stylesheet.
-                    </p>
-                    <ul class="about-list">
-                        <li>✅ <strong>Flexbox</strong> for one‑dimensional layouts (nav, cards)</li>
-                        <li>✅ <strong>CSS Grid</strong> for two‑dimensional page structures</li>
-                        <li>✅ <code>clamp()</code> for fluid typography</li>
-                        <li>✅ <code>auto-fit / minmax()</code> for self‑adjusting grids</li>
-                    </ul>
-                </article>
-                <aside class="about-sidebar">
-                    <div class="card">
-                        <h3>📊 Tech Stack</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3 (Flexbox + Grid)</li>
-                            <li>Vanilla JavaScript (hamburger)</li>
-                            <li>No frameworks needed</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>🎯 Core Principles</h3>
-                        <ul>
-                            <li>Mobile‑first</li>
-                            <li>Progressive enhancement</li>
-                            <li>Performance by default</li>
-                            <li>Accessibility (ARIA labels)</li>
-                        </ul>
-                    </div>
-                </aside>
+            <div class="info-card">
+              <h3>Tools I Use</h3>
+              <div class="tags">
+                <span>VS Code</span>
+                <span>Figma</span>
+                <span>Git</span>
+                <span>Chrome DevTools</span>
+                <span>Netlify / Vercel</span>
+              </div>
             </div>
+            <a href="index.html#contact" class="btn btn-primary btn-full">Get in Touch</a>
+          </aside>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Effortless Responsive. Built with ❤️ and CSS Grid.</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Ishank Sagar. Built with care.</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js" defer></script>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

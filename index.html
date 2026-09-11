@@ -1,84 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Effortless Responsive | Home</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Ishank Sagar – Web Developer from Neemganj, Biharsharif, Nalanda, Bihar">
+  <meta name="theme-color" content="#0c0c0b">
+  <title>Ishank Sagar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ===== NAVIGATION ===== -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">✨ Effortless</a>
-            </div>
-            <nav class="main-nav" aria-label="Main Navigation">
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span><span></span><span></span>
-                </button>
-                <ul class="nav-list" id="navList">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Ishank Sagar</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- ===== HERO ===== -->
+  <main>
     <section class="hero">
-        <div class="container">
-            <h1>Build <span>Effortless</span><br />Responsive Websites</h1>
-            <p class="hero-sub">
-                Mobile-first · Fluid grids · Flexbox &amp; Grid · No headaches
-            </p>
-            <a href="about.html" class="btn btn-primary">Learn More →</a>
+      <div class="container hero-content">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Ishank Sagar</h1>
+        <p class="tagline">Web Developer · UI Enthusiast · Problem Solver</p>
+        <p class="hero-desc">
+          I build fast, accessible, and
+          beautiful web experiences. Currently open to internships, freelance, and collaborations.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
         </div>
+      </div>
     </section>
 
-    <!-- ===== SERVICES / FEATURES ===== -->
-    <section class="features" id="services">
-        <div class="container">
-            <h2>Why It Works</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>📱 Mobile-First</h3>
-                    <p>Start small, then enhance. Your content stays focused and loads fast on any device.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🧩 Flexbox + Grid</h3>
-                    <p>Modern CSS layouts that adapt automatically — fewer media queries, more flexibility.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>⚡ Performance</h3>
-                    <p>Optimized images, minimal CSS, and clean code for lightning-fast experiences.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎨 Fluid Typography</h3>
-                    <p>Text scales smoothly with <code>clamp()</code> — always readable, never broken.</p>
-                </div>
+    <section class="section about-teaser">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Passionate developer with a focus on clean code, performance, and user-centered design.
+          I love turning ideas into polished digital products.
+        </p>
+        <a href="about.html" class="link-arrow">Learn more about me →</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image placeholder">L</div>
+            <div class="project-body">
+              <h3>Local business site</h3>
+              <p>A fast, mobile-first site for a shop in Biharsharif — hours, location, and a simple contact path.</p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
             </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image placeholder">C</div>
+            <div class="project-body">
+              <h3>Campus notice board</h3>
+              <p>A clean board for notices and events, designed to stay readable on low-end phones.</p>
+              <div class="tags">
+                <span>React</span><span>API</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image placeholder">P</div>
+            <div class="project-body">
+              <h3>Portfolio kit</h3>
+              <p>This site itself — semantic HTML, accessible forms, and a quiet editorial layout.</p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Let's Talk</h2>
-            <p>Have a project? Reach out — we build responsive, future-proof websites.</p>
-            <a href="mailto:hello@effortless.dev" class="btn btn-secondary">hello@effortless.dev</a>
-        </div>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <p class="section-intro">Have a question, idea, or opportunity? Send me a message.</p>
+        <form class="contact-form" action="#" method="POST" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Effortless Responsive. Built with ❤️ and CSS Grid.</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Ishank Sagar. Neemganj, Biharsharif.</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js" defer></script>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('open');
+    });
+    document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Message sent';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        e.target.reset();
+      }, 2500);
+    });
+  </script>
 </body>
 </html>

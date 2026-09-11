@@ -1,0 +1,58 @@
+PORTFOLIO LAYOUT STRUCTURE
+==========================
+
+File structure
+--------------
+portfolio/
+├── index.html          → Home page (hero, about teaser, projects, contact form)
+├── about.html          → Detailed About page
+├── style.css           → Shared styles for all pages
+├── layout.text         → This file (layout overview)
+├── performance.md      → Performance notes & checklist
+└── README.md           → How to use & customize
+
+Page layout (both pages)
+------------------------
+1. Sticky header
+   - Logo (left)
+   - Navigation links (Home | About | Projects | Contact)
+   - Mobile hamburger toggle
+
+2. Main content
+   - index.html:
+     • Hero section (name, tagline, CTAs)
+     • About teaser
+     • Projects grid (3 cards)
+     • Contact form (Name, Subject, Message)
+   - about.html:
+     • Page title + lead
+     • Two-column layout (story + sidebar cards)
+
+3. Footer
+   - Copyright
+   - Social links (GitHub, LinkedIn, X)
+
+Visual hierarchy
+----------------
+- Dark theme (slate background #0f172a)
+- Accent color: sky blue (#38bdf8)
+- Clean Inter font
+- Card-based project & info sections
+- Rounded corners + subtle hover lifts
+
+Responsive breakpoints
+----------------------
+- Desktop: full nav + 3-column project grid
+- Tablet (≤768px): hamburger menu, single-column about
+- Mobile (≤480px): stacked buttons, full-width form
+
+Form
+----
+Contact form fields:
+  - Name (text, required)
+  - Subject (text, required)
+  - Message (textarea, required)
+  - Submit button
+
+Currently demo-only (preventDefault + temporary success state).
+To make it real, connect to Formspree, Netlify Forms, EmailJS, or your own backend.

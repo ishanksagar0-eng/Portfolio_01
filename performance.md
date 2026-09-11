@@ -1,26 +1,56 @@
-# Performance Optimizations
+# Performance Notes & Checklist
 
-## Why Performance Matters
-A responsive site must be **fast** — mobile users often have slower connections and less powerful devices. This project follows performance best practices from the ground up.
+This portfolio is built with performance and accessibility in mind.
+
+## What is already optimized
+
+| Area | Implementation |
+|------|----------------|
+| **CSS** | Single shared stylesheet, no unused frameworks |
+| **Fonts** | Google Fonts with `preconnect` + `display=swap` |
+| **Images** | Placeholders only – replace with optimized WebP/AVIF |
+| **JavaScript** | Minimal, no libraries, deferred by default (inline at bottom) |
+| **Layout** | CSS Grid + Flexbox, no heavy frameworks |
+| **Accessibility** | Semantic HTML, proper labels, focus styles, `aria` attributes |
+| **Reduced motion** | Respects `prefers-reduced-motion` |
+| **Theme color** | Meta tag for browser chrome |
+
+## Recommended next steps
+
+1. **Images**
+   - Convert project screenshots to WebP
+   - Add `width` / `height` attributes or aspect-ratio
+   - Use `loading="lazy"` for below-the-fold images
+
+2. **Form backend**
+   - Formspree, Netlify Forms, or EmailJS (no extra JS weight if possible)
+
+3. **Hosting**
+   - Deploy on Netlify / Vercel / Cloudflare Pages (automatic HTTPS + CDN)
+
+4. **Caching**
+   - Set long cache headers for CSS & static assets
+   - Use a service worker only if you need offline support
+
+5. **Lighthouse targets**
+   - Performance ≥ 95
+   - Accessibility ≥ 95
+   - Best Practices ≥ 95
+   - SEO ≥ 95
+
+## Core Web Vitals focus
+
+- **LCP**: Keep hero text lightweight; avoid large hero images above the fold
+- **CLS**: Reserve space for images and avoid late-loading fonts that shift layout
+- **INP**: Keep JS tiny; no heavy event listeners
+
+## Quick audit command (local)
+
+```bash
+# After deploying, run Lighthouse in Chrome DevTools
+# or use: npx lighthouse https://your-site.com --view
+```
 
 ---
 
-## 1. Minimal Dependencies
-- ✅ **Zero frameworks** (no Bootstrap, Tailwind, or React)
-- ✅ **Zero external fonts** (uses system-ui stack)
-- ✅ **Zero icon libraries** (uses emoji for visual cues)
-- Total CSS: ~3.5 KB (minified)
-- Total JS: < 1 KB
-
----
-
-## 2. Optimized Images
-- No external images in this demo
-- For production: use `<picture>` with `srcset` or `WebP` formats
-- Always set `width` / `height` attributes to prevent layout shift (CLS)
-
-```html
-<picture>
-  <source srcset="hero.webp" type="image/webp" />
-  <img src="hero.jpg" alt="Hero" width="1200" height="600" loading="lazy" />
-</picture>
+*Last updated: September 2026*
